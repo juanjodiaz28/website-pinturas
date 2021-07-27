@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/icono.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Pintor José Diaz - Contacto</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Titulo de Servicios</h1>
+    </section>
+
+    <!-- Seccion -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/banner2.png">
+                <h2>Titulo de la sección</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quo exercitationem?
+                    Ex libero dolorum fugiat! Explicabo tenetur error esse odio consequuntur! Non vitae itaque
+                    officiis nesciunt temporibus quo repudiandae vel.</p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quo exercitationem?
+                    Ex libero dolorum fugiat! Explicabo tenetur error esse odio consequuntur! Non vitae itaque
+                    officiis nesciunt temporibus quo repudiandae vel.</p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quo exercitationem?
+                    Ex libero dolorum fugiat! Explicabo tenetur error esse odio consequuntur! Non vitae itaque
+                    officiis nesciunt temporibus quo repudiandae vel.</p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quo exercitationem?
+                    Ex libero dolorum fugiat! Explicabo tenetur error esse odio consequuntur! Non vitae itaque
+                    officiis nesciunt temporibus quo repudiandae vel.</p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quo exercitationem?
+                    Ex libero dolorum fugiat! Explicabo tenetur error esse odio consequuntur! Non vitae itaque
+                    officiis nesciunt temporibus quo repudiandae vel.</p>
+
+                <div class="comment-box">
+                    <h3>Titulo de la Sección</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Ingrese el Nombre">
+                        <input type="email" placeholder="Ingrese el Correo">
+                        <textarea rows="5" placeholder="Ingresa un Comentario"></textarea>
+                        <button type="submit" class="hero-btn color-btn">Enviar Comentario</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="blog-right">
+                <h3>Titulo de la Sección</h3>
+                <div>
+                    <span>Titulo 1</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>Titulo 1</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>Titulo 1</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>Titulo 1</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>Titulo 1</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>Titulo 1</span>
+                    <span>10</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <section class="footer">
+        <h4>Pintor José Diaz</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, fuga, nemo nesciunt nam
+            quod eum necessitatibus ullam quae corrupti iure sit,<br> molestiae veniam illum itaque ea
+            laborum incidunt ratione alias.</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Copyright© 2021 - José Diaz</p>
+    </section>
+
+
+    <!-- Menu Responsive -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>

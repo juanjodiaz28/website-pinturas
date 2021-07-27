@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/icono.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Pintor José Diaz - Contacto</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Titulo de Contacto</h1>
+    </section>
+
+    <!-- Seccion -->
+    <div class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.4045753356345!2d-77.01908907094882!3d-11.876891523334645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d0a475f3f7c1%3A0x4eb71fada62c060a!2sManuel%20Pardo!5e0!3m2!1ses!2spe!4v1609651272565!5m2!1ses!2spe"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </div>
+
+    <!-- Seccion -->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>Titulo 1</h5>
+                        <p>Texto del titulo 1</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>Titulo 2</h5>
+                        <p>Texto del titulo 2</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>Titulo 3</h5>
+                        <p>Texto del titulo 3</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form.php" method="POST">
+                    <input type="text" name="nombre" placeholder="Ingrese su Nombre" required>
+                    <input type="email" name="correo" placeholder="Ingrese su Correo" required>
+                    <input type="text" name="asunto" placeholder="Ingrese su Asunto" required>
+                    <textarea rows="8" name="mensaje" placeholder="Ingrese su Mensaje" required></textarea>
+                    <button type="submit" class="hero-btn color-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <section class="footer">
+        <h4>Pintor José Diaz</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, fuga, nemo nesciunt nam
+            quod eum necessitatibus ullam quae corrupti iure sit,<br> molestiae veniam illum itaque ea
+            laborum incidunt ratione alias.</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Copyright© 2021 - José Diaz</p>
+    </section>
+
+
+    <!-- Menu Responsive -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
